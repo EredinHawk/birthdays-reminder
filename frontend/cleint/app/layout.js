@@ -1,18 +1,15 @@
-import { Inter } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
-
 export const metadata = {
-  title: 'Birthdays reminder',
-}
-
+    title: 'Birthdays Reminder',
+  }
+  
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>
-        {children}
-      </body>
-    </html>
-  )
+    return (
+        <html lang='ru'>
+            <body>
+                {children}
+            </body>
+        </html>
+    );
 }
